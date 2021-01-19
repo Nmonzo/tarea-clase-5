@@ -21,8 +21,8 @@
         let minutosTotales = minuto1 + minuto2 + minuto3 + minuto4 + minuto5
         let segundosTotales = segundo1 + segundo2 + segundo3 + segundo4 + segundo5
 
-        let tiempoTotal = horasTotales ('horas') + minutosTotales ('minutos') + segundosTotales ('segundos') 
+        let tiempoTotal = horasTotales  + minutosTotales  + segundosTotales 
 
-    document.querySelector('#tiempototal') = tiempoTotal
-        return false;
-}
+    document.querySelector('#tiempototal').value = (horasTotales + (' h ') +  minutosTotales + (' m ') + (' y ') +  segundosTotales + (' seg '))
+       ;return false
+} 
